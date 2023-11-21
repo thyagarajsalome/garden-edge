@@ -9,8 +9,7 @@
 
 * {
   color: #fff;
-  
-}
+  }
 
 
 body {
@@ -158,6 +157,38 @@ padding: 10px;
       border-radius: 10px;
       padding: 10px;
        }
-
    }
+
+   .high_box {
+    margin: 10px;
    
+    
+   }
+   .hlt {
+        font-size: 24px;
+        margin-left: 10px;
+        
+           }
+            p{
+            font-size: 16px;
+            color:#fff;
+           }
+
+        @media(min-width:768px)  {
+            .high_box {
+              width: 80%;
+                         
+             }
+             p{
+              font-size: 18px;
+                           }
+          }
+          @media(min-width:1440px)  {
+            .high_box {
+              width: 90%;
+                         
+             }
+             p{
+              font-size: 24px;
+                           }
+          }
