@@ -1,235 +1,116 @@
-/* Root */
-:root {
-  --color-primary: #2584ff;
-  --color-secondary:#00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #fff;
-}
-
-* {
-  color: #fff;
-  }
-
 
 body {
-  background-attachment: fixed;
-  background-image: url(./images/cover.webp);
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
- }
- 
-
-  /* Title garden-edge */
-.title_text {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-   
-  }
-  /* top navigation bar */
- ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
   padding: 0;
-  
-   }
-
-/* li{
-
-list-style-type: none;
-display: inline;
-padding: 10px;
-  
-} */
-   
- a {
-  text-decoration: none;
-   
+  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-.projects_text {
-  align-items: center;
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  /* float: left; */
   display: flex;
-  height: 50vh;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding: 14px 16px;
+}
+
+
+.garden_edge {
+  display: flex;
   justify-content: center;
-  }
+}
 
-  h2 {
-    font-size: 50px;
-    }
+span {
+  color: rgb(15, 114, 15);
+}
 
-    
-    .box {
-      background-color: rgba(176, 174, 174, 0.329);
-      border-radius: 20px;
-      border: 1px solid white;
-      padding: 50px;
-    }
- 
-   
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      padding: 15px 20px;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #acacac4e;
-      border-radius: 10px;
-    }
-   
-          
-    /* Responsive sizes */
-    
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        text-align: center;
-      }
-          
-      nav a {
-        color: white;
-        display: inline-block;
-        padding: 15px 20px;
-        text-decoration: none;
-        width: 10%;
-      }
-    }
-
-  @media (min-width: 768px){
-    h1 {
-      font-size: 64px;
-    }
-    h2   {
-      font-size: 100px;
-    }
-
- }
-  
- @media (min-width: 768px) {
-  ul a {
-    font-size: 32px;
-  }
- }
- 
- .main {
-  margin: 10px;
-  font-size: 20px;
- }
- p {
-  border: 1px solid rgb(255, 255, 255);
-  background-color: rgba(33, 133, 194, 0.624);
+p {
+  border: 1px solid green;
   border-radius: 10px;
   padding: 10px;
-   }
-   section p {
-    font-size: 16px;
-   }
-   .icon {
-    margin: 2px;
-    background: #ffffff94;
-          }
-      @media (min-width:1024px) {
-    .main {
-      font-size: 30px;
-    }
-    section p {
-      font-size: 24px;
-     }
-     p {
-      border: 1px solid rgb(255, 255, 255);
-      background-color: rgba(33, 133, 194, 0.624);
-      width: 60%;
-      border-radius: 10px;
-      padding: 10px;
-       }
-   }
+}
 
-   .high_box {
-    margin: 10px;
-   
-    
-   }
-   .hlt {
-        font-size: 24px;
-        margin-left: 10px;
-        
-           }
-            p{
-            font-size: 16px;
-            color:#fff;
-           }
+section p {
+  font-size: 16px;
+}
 
-        @media(min-width:768px)  {
-            .high_box {
-              width: 80%;
-                         
-             }
-             p{
-              font-size: 18px;
-                           }
-          }
-          @media(min-width:1440px)  {
-            .high_box {
-              width: 90%;
-                         
-             }
-             p{
-              font-size: 24px;
-                           }
-          }
-          /* Grids */
-        
-          body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-            gap: 16px;
-            padding: 16px;
-            
-        }
-        
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-        /* Footer */
-        /* Add this to your existing styles.css or create a new one */
 
-/* Testimonial Section Styles */
+
+.high_box {
+  margin: 10px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button {
+  color: #fff;
+  border: none;
+  background-color: green;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: goldenrod;
+}
+
 .testimonial-section {
   background-color: #f8f8f8;
-  padding: 40px 20px;
+  width: 100%;
   text-align: center;
 }
 
 .testimonial {
+  padding: 10px;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -246,28 +127,77 @@ padding: 10px;
   color: #555;
 }
 
-/* Footer Styles */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #eee;
+  width: 100%;
+  color: #555;
   text-align: center;
   padding: 20px 0;
 }
 
+/* Responsive */
+/* Mobile and Tablet */
 
-
-/* Responsive Styles */
-@media screen and (max-width: 600px) {
-  .testimonial-section {
-      padding: 20px;
+@media (width < 768px) {
+  body {
+    /* background-color: lightcoral; */
   }
-
-  .testimonial {
-      max-width: 100%;
-  }
-
-  .footer {
-      padding: 10px 0;
-            
-  }
+  
 }
+
+/* --------------------------------------------------- */
+/* Laptop and screen */
+@media (width >= 768px) {
+  body {
+    /* background-color: lightblue */
+  }
+  nav a {
+    /* float: left; */
+    float: left;
+    font-size: 22px;
+     
+  }
+  .testimonial {
+      max-width: 800px;
+      }
+      
+      p {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      .quote {
+        font-size: 24px;
+       }
+}
+
+     }
+
+/* -----2560 px 4k */
+
+@media (width >= 2560px) {
+  body {
+    /* background-color: rgb(178, 230, 173) */
+  }
+  nav a {
+    /* float: left; */
+    float: left;
+    font-size: 44px;
+     
+  }
+  .testimonial {
+      max-width: 2000px;
+      }
+      
+      p {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 48px;
+      }
+      .quote {
+               font-size: 36px;
+              }
+     }
+     
